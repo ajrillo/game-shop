@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explosion Games </title>
+    <meta charset='utf-8'>
+    <%= stylesheet_link_tag 'epicStyles.css' %>
+    <%= favicon_link_tag 'logo2.ico' %>
+  </head>
+
+  <body bgcolor='LightGray'>
+    <center>
+      <table bgcolor='white' width='90%'>
+          <tr><td><%= render "layouts/header" %></td></tr>
+          <tr><td height='300' valign='top'><%= yield %></td></tr>
+          <tr><td><%= render "layouts/footer" %></td> </tr>
+      </table>
+    </center>
+  </body>
+</html>

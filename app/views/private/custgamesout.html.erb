@@ -1,0 +1,26 @@
+<center>
+    <h1>These are the Games <%= @customer_name %> purchased </h1>
+</center>
+<br/><br/>
+
+<center>
+    <table cellspacing="20"> 
+        <tr> 
+            <th> Game Name </th>
+            <th> Date of Purchase </th>
+            <th> Game Price</th>
+        </tr>   
+        <% @game_list.each do |m| %>     
+            <tr> 
+                <td> <%= m.name  %> </td>
+                <%# https://apidock.com/ruby/DateTime/strftime %>
+                <td> <%= m.date.date.strftime('%B %e, %Y') %> </td>
+                <td> $<%=  '%.2f' % m.price.price %> </td>
+            </tr> 
+        <% end %>
+    </table>
+</center>
+<br><br>
+<%= link_to 'New Search', private_custgamesin_path %>
+<br><br>
+<%= link_to 'Back to Administrator Page', private_home_path %>

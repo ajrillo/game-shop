@@ -1,0 +1,15 @@
+<h1>Welcome to Explosion Games!</h1>
+<p>Buy and Sell your favorite games here! </p>
+<br>
+<table>
+    <tr>
+        <td align = "center"> <%= link_to (image_tag 'products.png' ), home_game_path %> <br>
+        <font size="6"> <%= link_to 'Games', home_game_path %> </font> </td>
+        
+        <td align = "center"> <%= link_to (image_tag 'customer.png' ), home_inquiry_path %> <br>
+        <font size="6"> <%= link_to 'Customers', home_inquiry_path %> </font> </td>
+        
+        <td align = "center"> <%= link_to (image_tag 'price.png' ), home_price_path %> <br>
+        <font size="6"> <%= link_to 'Prices', home_price_path %> </font> </td>
+    </tr>
+</table>

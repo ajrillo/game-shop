@@ -1,0 +1,16 @@
+<h2>Please enter the Lastname of the Customer for whom you want the games purchased </h2>
+
+    <%= form_tag(private_custgamesout_path, :controller => "private", :action => "custgamesout", :method => "post") do %>
+  
+    <div class="field">
+        <%= label_tag :customer_name %><br />
+        <%= text_field_tag :customer_name_in %>
+    </div>
+   
+    <div class="actions">
+        <%= submit_tag "Submit Customer Name" %>
+    </div>
+    <% end %>
+
+<br><br><br><br><br><br><br><br>
+<%= link_to 'Back', private_home_path %>

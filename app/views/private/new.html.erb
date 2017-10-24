@@ -1,0 +1,17 @@
+<h2>This Page is restricted to Administrators only</h2>
+<p id="notice"><%= notice %></p>
+<%= form_tag login_url do %>
+
+<p>
+    <label for = "Userid">Username</label>
+    <%= text_field_tag :userid, params[:userid] %>
+</p>
+
+<p>
+    <label for = "password">Password</label>
+    <%= password_field_tag :password, params[:password] %>
+</p>
+
+<%= submit_tag "login" %>
+
+<%end%>

@@ -1,0 +1,38 @@
+body {
+    background: lightgray;
+    font-family: Verdana, Geneva, sans-serif;
+    color: grey;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+}
+
+#notice{
+    color: green;
+}
+
+img {
+    border-color: lightgray;
+}
+
+/* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: fuchsia;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
